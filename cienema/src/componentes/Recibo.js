@@ -9,7 +9,7 @@ const Recibo = (props) => {
             Object.keys(props.compra).length!==0?          
            
             <div>
-                <h4>Compra</h4>
+                <h4>Boleto</h4>
                 <div className="Ticket">
                   <p><strong>{props.compra.nombre}</strong> ({props.compra.idioma})</p>
                   <p><strong>Hora: </strong>{props.compra.horario}</p>
