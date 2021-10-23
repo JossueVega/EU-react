@@ -21,6 +21,14 @@ class App extends Component {
   }
       
   agregar=(peli,horario)=>{
+    var precio;
+    if(peli.clasificacion==='A'){
+      precio=50;
+    }else if(peli.clasificacion==='B'){
+      precio=80;
+    }else if(peli.clasificacion==='C'){
+      precio=95;
+    } 
 
       const objeto={
         codigo:peli.codigo,
@@ -30,7 +38,7 @@ class App extends Component {
         horario:horario,
         cantidad:1,
         duracion:peli.duracion,
-        total:0
+        total:precio
       }
        this.setState({
           ...this.state,
